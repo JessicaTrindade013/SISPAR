@@ -3,18 +3,17 @@
 
 main{
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    justify-content: space-between;   
+    
     
 }
 
 .containerLogin{  
     display: flex;
     height: 100vh;
-    width: 60vw;
+    width: 60%;
     background-repeat: no-repeat;
-    background-size: contain;    
+    background-size: 100%;   
+    background-position: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;    
@@ -28,73 +27,59 @@ main{
     width: 36.45vw;
     height: 100vh;        
 
-    h1{        
+    h1{                
         width: 15.78vw;        
         font-size: 2rem;
         text-align: center;        
-        color: #000000;
+        color: #23282F;
         font-family: Inter;
         font-weight: 700;        
     }  
-    p{     
-        font-size: 1rem;
-        text-align: center;        
-        color: #0844C4;
-        font-family: Inter;
-        font-weight: 700;  
-        padding-top: 0.5rem;   
-
-      }  
+    
 }
 
-.containerInputs{
-    width: 19vw;
-    height: 16vh;
-    padding-top: 2rem;
+.formLogin{
+    display: flex;
+    width: 19vw;    
+    padding-top: 2rem;    
+    flex-direction: column;    
+    align-items: center;
+    
 
     input{
-        display: flex;
+        
         width: 19vw;
-        height: 6.03vh;
+        height: 6vh;
         border-radius: 6px;
         align-items: center;    
         color: #FFFFFF;
-        border-color: #CBD4E1;      
-        }  
+        border-color: #CBD4E1;
+        margin-bottom: 0.5rem;     
+               
+        }          
     }
 
-.containerSenha{
-    width: 8.33vw;
-    height: 2.08vh;   
-    align-items: center; 
-    justify-content: center;   
-    color: #23282F; 
-    font-family: Inter; 
-    font-size: 1rem; 
-    font-weight: 400;
-    padding-top: 2rem;   
-   
-    }
 
-div{
+.divButton{
 display: flex;
 justify-content:space-evenly;
-
+width: 13vw;
+padding-top: 1rem;
 .buttonEntrar{
     background-color: #001a3d;
     color: #ffffff;
-    width: 6vw;
-    height: 6vh;
+    width: 5vw;
+    height: 5vh;
     border-radius: 6px;
     font-family: Inter;
 }
 .buttonCriar{
     background-color: #00bedd;
     color: #ffffff;
-    width: 6vw;
-    height: 6vh;
+    width: 5vw;
+    height: 5vh;
     border-radius: 6px;
-    font-family: Inter;
+    font-family: Inter;   
 }
 
 }

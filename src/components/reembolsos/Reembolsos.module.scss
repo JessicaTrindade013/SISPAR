@@ -1,5 +1,139 @@
-header{
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.containerReembolsos{
+  display: flex;
+  
+}
+
+
+header {
+  width: 8vw;
+  height: 5vh;
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 400;
+  color: #23282f;
+}
+
+.mainReembolsos {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center ;
+  width: 80vw;
+  height: 95vh;  
+ 
+  h1{  
+  font-size: 2rem;  
+  color: #000000;
+  font-weight: 700;  
+  font-family: Inter;
+  width: 46.5vw;
+  height: 4vh;  
+  }
+  
+  .pReembolsos{       
+    font-size: 1rem;
+    font-family: Inter;
+    color: #000000;
+    font-weight: 400;     
+    font-family: Inter;       
+    padding-top: 1rem;
+    width: 46.5vw;
+    height: 4vh;     
+   
+  }
+ 
+}
+
+.containerCards {
+  display: flex;
+  justify-content: space-evenly; 
+  height: 23vh;
+  width: 49vw;
+  margin-top: 2rem;
+  color: #cbd4e1;
+    
+}
+
+article {
+  border: solid #CBD4E1;
+  width: 15vw;
+  height: 23vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #23282f;
+  font-family: Inter;
+  border-radius: 6px;
+  gap: 8px;
+  
+}
+
+.containerStatus {
+  display: flex;
+  width: 47vw;
+  height: 10vh;  
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid #CBD4E1;
+  margin-top: 2rem;
+  border-radius: 6px;
+    
+  .divImagens {
     width: 8vw;
+    height: 4vh;   
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+      font-weight: 400;      
+      font-family: Inter;
+      color: #23282f;
+      }
+    h4{
+      font-weight: 700;      
+      font-family: Inter;
+      color: #23282f;
+    }  
+  }
+}
+
+.imgSolicitados{
+  background-color: #00bedd;
+  border-radius: 6px;
+  padding: 5px;
+  width: 1.25vw;
+  height: 2.63vh;
+  
+}
+
+.imgAnalises{
+  background-color: #E56700;
+  border-radius: 6px;
+  padding: 5px;
+  width: 1.25vw;
+  height: 2.63vh;
+  
+}
+
+.imgAprovados{
+  background-color:#007A6A ;
+  border-radius: 6px;
+  padding: 5px;
+  width: 1.25vw;
+  height: 2.63vh;
+}
+
+.imgRejeitados{
+  background-color: #A60B2F;
+  border-radius: 6px;
+  padding: 5px;
+  width: 1.25vw;
+  height: 2.63vh;
 }

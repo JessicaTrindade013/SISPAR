@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import Capa from "../../assets/TelaLogin/imagemcapa.png"
+import Capa from "../../assets/TelaLogin/imagemcapa.png";
 import Logo from "../../assets/TelaLogin/logo-ws.png";
 import styles from "./Login.module.scss";
 
 function Login (){
 
-    const navigate = useNavigate () //Iniciando o hook useNavigate
+    const navigate = useNavigate () 
 
     const irParaReembolso = () => {
-        navigate(reembolsos);
+        navigate("/reembolsos");
     };
     
     return (
@@ -23,15 +23,16 @@ function Login (){
                 <h1>Boas vindas ao Novo Portal SISPAR</h1>
                 <p>Sistema de Emissão de Boletos e Parcelamentos</p>
             
-            <form className={styles.containerInputs}action="">        
+            <form className={styles.formLogin}action="">        
 
               
                 <input type="email" name="email" id="email" placeholder="Email" />                                              
-                <input type="Password" name="senha" id="senha" placeholder="Senha" />                
+                <input type="Password" name="senha" id="senha" placeholder="Senha" />     
 
-                <a className={styles.containerSenha} href="">Esqueci minha senha</a>
 
-                <div>
+                <a href="">Esqueci minha senha</a>
+
+                <div className={styles.divButton}>
                     <button onClick={irParaReembolso} className={styles.buttonEntrar}> Entrar </button>
                     <button className={styles.buttonCriar}>Criar conta</button>
                 </div>

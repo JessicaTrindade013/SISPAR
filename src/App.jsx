@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Login from "./components/login/Login.jsx"
 import "./global.scss"
-import Reembolsos from "./components/reembolsos/Reembolsos.jsx";
-import Solicitacao from "./components/solicitacao/Solicitacao.jsx";
+import Reembolsos from "./components/reembolsos/Reembolsos.jsx"
+import Solicitacao from "./components/solicitacao/Solicitacao.jsx"
 
 function App(){
   return(
@@ -18,7 +18,7 @@ function App(){
 </Routes>
 </BrowserRouter>
 
-  );
+  )
 }
 
-export default App
+export default App;

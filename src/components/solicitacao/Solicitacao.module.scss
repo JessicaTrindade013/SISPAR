@@ -1,0 +1,92 @@
+.containerPrincipalSolicitacao{
+    
+    width: 95vw;
+}
+
+.headerSolicitacao{
+    border: solid red;
+    display: flex;
+    width: 20vw;
+}
+
+.layoutSolicitacao{
+    display: flex;
+}
+
+.mainSolicitacao{
+width: 100%;
+}
+
+.formSolicitacao{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+
+
+input, select, textarea{
+    border-radius: 6px;
+    border: solid #CBD4E1 0.8px;
+    height: 3vh;
+    width: 100%;
+}
+
+label{
+    color: #23282F;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+textarea{
+    height: 10vh;
+}
+
+
+
+.grupo1{
+ 
+    width: 40%;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.inputNome{
+   
+    width: 45%;
+}
+
+.inputEmpresa{
+  
+    width: 25%;
+}
+
+.inputPrestacao{
+   
+    width: 25%;
+}
+
+.inputMotivo{
+   
+    width: 100%;
+}
+
+
+
+.barraVertical{
+    width: 0.1vw;
+    border: solid #CBD4E1 1px;
+    height: 25vh;
+}
+
+
+
+.grupo2{
+    width: 55%;
+    height: 25vh;
+    border: solid red;
+}
