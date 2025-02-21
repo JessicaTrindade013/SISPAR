@@ -1,92 +1,203 @@
-.containerPrincipalSolicitacao{
-    
-    width: 95vw;
-}
-
-.headerSolicitacao{
-    border: solid red;
-    display: flex;
-    width: 20vw;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .layoutSolicitacao{
     display: flex;
 }
 
+.containerPrincipalSolicitacao{
+     width: 95vw;
+}
+
+.headerSolicitacao{
+    width: 5vw;
+    height: 10vh;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Inter;
+    font-weight: 400;
+    color: #23282f;
+   
+}
+
 .mainSolicitacao{
-width: 100%;
+width: 94vw;
+flex-direction: column;
+display: flex;
 }
 
 .formSolicitacao{
-width: 100%;
-display: flex;
+display: flex;    
+width: 95vw;
 justify-content: space-between;
+
 }
-
-
-
-input, select, textarea{
-    border-radius: 6px;
-    border: solid #CBD4E1 0.8px;
-    height: 3vh;
-    width: 100%;
-}
-
-label{
-    color: #23282F;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-textarea{
-    height: 10vh;
-}
-
-
-
 .grupo1{
  
-    width: 40%;
-    height: 25vh;
+    width: 40vw;
+    height: 20vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
+input, select, textarea{
+    border-radius: 6px;
+    border: solid #CBD4E1 0.8px;
+    height: 4vh;
+    width: 100%;
+    font-family: Inter;
+    font-weight: 700;
+    align-items:flex-start;
+    text-align: justify;
+    
+}
+
+label{
+    color: #23282F;
+    font-weight: 700;
+    font-size: 1rem;
+    border-color: #CBD4E1;
+}
 
 .inputNome{
+   width: 15vw;
    
-    width: 45%;
 }
 
 .inputEmpresa{
-  
-    width: 25%;
+    width: 10vw;
+    
 }
 
 .inputPrestacao{
    
-    width: 25%;
+    width: 10vw;
+}
+
+textarea{
+    height: 10vh;
 }
 
 .inputMotivo{
    
-    width: 100%;
+    width: 100vw;
 }
-
-
 
 .barraVertical{
     width: 0.1vw;
     border: solid #CBD4E1 1px;
-    height: 25vh;
+    height: 20vh;
 }
-
-
-
 .grupo2{
-    width: 55%;
-    height: 25vh;
-    border: solid red;
+    width: 45vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+   
 }
+
+.inputData{
+    width: 8vw;
+        
+}
+
+.despesas{
+    width: 10vw;
+       
+}
+
+.custo{
+    width: 25vw;
+}
+
+.inputOrdem{
+    width: 3.1vw;
+}
+
+.inputDiv{
+    width: 3vw;
+}
+
+.inputPep{
+    width: 3vw;
+}
+
+.inputMoeda{
+    width: 4vw;
+}
+
+.inputDistanciaKm{
+    width: 4vw;
+}
+
+.inputValorKm{
+    width: 5vw;
+}
+
+.inputFaturamento{
+    width: 5.5vw;
+}
+
+.inputDespesa{
+    width: 6vw;
+}
+
+.salvarDeletar{
+    width: 10vw;
+    height: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+    padding-left: 2rem;
+
+}
+
+.buttonSalvar{
+    background-color: #001a3d;    
+    width: 5vw;
+    height: 4vh;
+    border-radius: 6px;
+    justify-content: space-between;
+     
+
+    h2{
+    color: #ffffff;  
+    font-size: 16px;
+    
+    }
+   
+}
+
+
+.buttonDeletar{
+    background-color: #00bedd;   
+    width: 3vw;
+    height: 4vh;
+    border-radius: 6px;
+    font-family: Inter;
+}
+
+table{
+    width: 100%;
+    background-color: #ffffff;   
+    border-collapse: collapse;
+    
+}
+
+th{
+    background-color: #CBD4E1;
+
+}
+
+td, th{
+    border: solid;
+    border: solid #CBD4E1 0.8px;
+}
+
