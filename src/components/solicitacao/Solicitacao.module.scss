@@ -21,9 +21,10 @@
 }
 
 .mainSolicitacao{
-width: 94vw;
+width: 100%;
 flex-direction: column;
 display: flex;
+padding-right: 2rem;
 }
 
 .formSolicitacao{
@@ -89,16 +90,18 @@ textarea{
     width: 0.1vw;
     border: solid #CBD4E1 1px;
     height: 20vh;
+
 }
 .grupo2{
-    width: 45vw;
+    width: 50vw;
     height: 20vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     font-family: Inter;
-   
+    padding-right: 2rem;
+       
 }
 
 .inputData{
@@ -112,11 +115,11 @@ textarea{
 }
 
 .custo{
-    width: 25vw;
+    width: 28vw;
 }
 
 .inputOrdem{
-    width: 3.1vw;
+    width: 3vw;
 }
 
 .inputDiv{
@@ -140,7 +143,7 @@ textarea{
 }
 
 .inputFaturamento{
-    width: 5.5vw;
+    width: 6vw;
 }
 
 .inputDespesa{
@@ -185,19 +188,56 @@ textarea{
 }
 
 table{
-    width: 100%;
-    background-color: #ffffff;   
-    border-collapse: collapse;
-    
-}
+    margin-top: 2rem;
+    width: 100%;      
+    border-collapse: collapse;    
+    border-radius: 6px; 
+    overflow: hidden;      
+                  
+  }
+
 
 th{
-    background-color: #CBD4E1;
+    background-color: #CBD4E1;    
+    padding-top: 1rem;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
+    
 
 }
 
-td, th{
-    border: solid;
-    border: solid #CBD4E1 0.8px;
-}
+td, th, tr{
+
+    border: 0.8px solid #CBD4E1;
+    text-align: center;   
+    min-height: 50px;
+    }
+
+
+    .trTable{
+        height: 350px;
+    }
+
+    .formTabela{
+        display: flex;
+        padding-top: 1rem;
+        justify-content: flex-end;        
+    }
+
+    .inputTotalFaturado{
+        width: 6vw;
+    }
+
+    .inputTotalDespesa{
+        width: 6vw;
+    }
+
+
+
+
+
+
+
+
 
