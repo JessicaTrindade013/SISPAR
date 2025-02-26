@@ -3,10 +3,14 @@ import styles from "./Solicitacao.module.scss";
 import Home from "../../assets/Dashboard/home header.png";
 import Seta from "../../assets/Dashboard/Vector.png";
 import Deletar from "../../assets/Solicitacao/deletar.png";
-import Lixeira from "../../assets/Solicitacao/lixeira.png"
-import Motivo from "../../assets/Solicitacao/motivo.png"
+import Lixeira from "../../assets/Solicitacao/lixeira.png";
+import Motivo from "../../assets/Solicitacao/motivo.png";
+import Check from "../../assets/Solicitacao/check.png";
 
 function Solicitacao() {
+
+  
+  
   return (
     <div className={styles.layoutSolicitacao}>
       <NavBar />
@@ -23,23 +27,23 @@ function Solicitacao() {
           <form className={styles.formSolicitacao}>
             <div className={styles.grupo1}>
               <div className={styles.inputNome}>
-                <label htmlFor="">Nome Completo</label>
+                <label htmlFor="Nome Completo">Nome Completo</label>
                 <input type="text" />
               </div>
 
               <div className={styles.inputEmpresa}>
-                <label htmlFor="">Empresa</label>
+                <label htmlFor="Empresa">Empresa</label>
                 <input type="text" />
               </div>
 
               <div className={styles.inputPrestacao}>
-                <label htmlFor="">Nº Prest. Contas</label>
+                <label htmlFor="Nº Prest. Contas">Nº Prest. Contas</label>
                 <input type="number" name="" id="" />
               </div>
 
               <div className={styles.inputMotivo}>
-                <label htmlFor="">Descrição / Motivo do Reembolso</label>
-                <textarea name="" id="">
+                <label htmlFor="Descrição / Motivo do Reembolso">Descrição / Motivo do Reembolso</label>
+                <textarea name="motivoReembolso" id="motivoReembolso">
                   {" "}
                 </textarea>
               </div>
@@ -48,16 +52,16 @@ function Solicitacao() {
             <div className={styles.barraVertical}></div>
 
             <div className={styles.grupo2}>
+
               <div className={styles.inputData}>
-                <label htmlFor="">Data</label>                
-                <input type="date" name="" id="" />                
-                                
+                <label htmlFor="Data">Data</label>                
+                <input type="date" id="data" name="data" placeholder="DD/MM/AAAA" /> 
               </div>
 
               <div className={styles.despesas}>
-                <label htmlFor=""> Tipo de Despesa</label>
+                <label htmlFor="Tipo de Despesa"> Tipo de Despesa</label>
                 
-                <select name="" id="">
+                <select name="tipoDespesa" id="tipoDespesa">
                 <option value="" disabled selected>Selecionar </option>
                   <option value=""> Alimentação</option>
                   <option value="">Combustível</option>
@@ -70,9 +74,9 @@ function Solicitacao() {
               </div>
 
               <div className={styles.custo}>
-                <label htmlFor=""> Centro de custo</label>
+                <label htmlFor="Centro de custo"> Centro de custo </label>
                 
-                <select name="" id="">
+                <select name="centroCusto" id="centroCusto" required>
                 <option value="" disabled selected>Selecionar </option>
                 <option value="">1100109002 -   FIN CONTROLES INTERNOS MTZ</option>
                 <option value="">1100110002 - FIN VICE-PRESIDENCIA FINANCAS MTZ</option>
@@ -80,47 +84,47 @@ function Solicitacao() {
                 </select>
               </div>
               <div className={styles.inputOrdem}>
-                <label htmlFor="">Ord. Int</label>
+                <label htmlFor="Ord. Int"> Ord. Int </label>
                 <input type="number" />
               </div>
 
               <div className={styles.inputDiv}>
-                <label htmlFor="">Div.</label>
+                <label htmlFor="Div."> Div. </label>
                 <input type="number" />
               </div>
 
               <div className={styles.inputPep}>
-                <label htmlFor="">PEP</label>
+                <label htmlFor="PEP"> PEP </label>
                 <input type="number" />
               </div>
 
               <div className={styles.inputMoeda}>
-                <label htmlFor="">Moeda</label>
+                <label htmlFor="Moeda"> Moeda </label>
                 <input type="text" />
               </div>
 
               <div className={styles.inputDistanciaKm}>
-                <label htmlFor="">Dist/Km</label>
+                <label htmlFor="Dist/Km"> Dist/Km </label>
                 <input type="text" />
               </div>
 
               <div className={styles.inputValorKm}>
-                <label htmlFor="">Valor/Km</label>
+                <label htmlFor="Valor/Km"> Valor/Km </label>
                 <input type="number" />
               </div>
 
               <div className={styles.inputFaturamento}>
-                <label htmlFor="">Val.Faturado</label>
+                <label htmlFor="Val.Faturado"> Val.Faturado </label>
                 <input type="number" />
               </div>
 
               <div className={styles.inputDespesa}>
-                <label htmlFor="">Despesa</label>
+                <label htmlFor="Despesa"> Despesa </label>
                 <input type="number" />
               </div>
 
               <div className={styles.salvarDeletar}>
-                <button className={styles.buttonSalvar}>
+                <button type="submit" className={styles.buttonSalvar}>
                   
                   <h2> + Salvar</h2>
                 </button>
@@ -134,7 +138,7 @@ function Solicitacao() {
                     
             <table>
               <thead>
-                <tr>
+                
                   <th></th>
                   <th>Colaborador(a)</th>
                   <th>Empresa</th>
@@ -152,16 +156,16 @@ function Solicitacao() {
                   <th>Val. Faturado</th>
                   <th>Despesa</th>
                   
-                </tr>
+               
               </thead>
               <tbody>
                 <tr>
-                  <td><img src={Lixeira} alt="Icone lixeira"></img></td>
+                  <td><img src={Lixeira} alt="Excluir solicitação"></img></td>
                   <td>Vitor Carvalho</td>
                   <td>WSS001</td>
                   <td>329456</td>
                   <td>08/01/2025</td>
-                  <td><img src={Motivo} alt="Icone lixeira"></img></td>
+                  <td><img src={Motivo} alt="Arquivo de pedido"></img></td>
                   <td>Desp. de viagem administrativa</td>
                   <td>1100110002 - FIN VICE-PRESIDENCIA FINANCAS MTZ</td>
                   <td>0003</td>
@@ -209,39 +213,31 @@ function Solicitacao() {
                   <td>109.75</td>
                   <td>29.97</td>
                 </tr>
-                <tr className={styles.trTable}>     
+                <tr className={styles.espacoTable}>     
                 </tr>
                   </tbody> 
-                  <tfoot>                  
-                  
-                  </tfoot>             
-                </table>
-
-                <form className={styles.formTabela}>                                      
+                  <tfoot> 
+                  <div className={styles.divRodape}>                
                   <div className={styles.inputTotalFaturado}>
                 <label htmlFor="">Total Faturado</label>
-                <input type="number" name="" id="" />
+                <input type="text" name="valor" id="valor" placeholder=" 0,00" />
               </div>
               <div className={styles.inputTotalDespesa}>
                 <label htmlFor="">Total Despesa</label>
-                <input type="number" name="" id="" />
+                <input type="text" name="valor" id="valor" placeholder=" 0,00"/>
               </div>
-              <button className={styles.buttonAnalise}>
+              <button className={styles.buttonCheck}>
+                <img src={Check} alt="Ícone de check"/>
                 <h2> Enviar para Análise</h2>
 
               </button>
               <button className={styles.buttonCancelar}>
               <h2>X Cancelar Solicitação</h2>
               </button>
-                  </form>
-                
-                  
-                
-
-            
-         
-
-
+              </div>
+             
+                  </tfoot>             
+                </table>  
         </main>
         
       </div>

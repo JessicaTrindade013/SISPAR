@@ -20,21 +20,21 @@ function Login (){
             
             <section className={styles.containerForm} >
                 <img src={Logo} alt="Logo da Wilson,Sons"/>
-                <h1>Boas vindas ao Novo Portal SISPAR</h1>
-                <p>Sistema de Emissão de Boletos e Parcelamentos</p>
+                <h1> Boas vindas ao Novo Portal SISPAR </h1>
+                <p> Sistema de Emissão de Boletos e Parcelamentos </p>
             
             <form className={styles.formLogin}action="">        
 
               
-                <input type="email" name="email" id="email" placeholder="Email" />                                              
-                <input type="Password" name="senha" id="senha" placeholder="Senha" />     
+                <input type="email" name="email" id="email" placeholder=" Email" />                                              
+                <input type="Password" name="senha" id="senha" placeholder=" Senha" />     
 
 
-                <a href="">Esqueci minha senha</a>
+                <a href=""> Esqueci minha senha</a>
 
                 <div className={styles.divButton}>
                     <button onClick={irParaReembolso} className={styles.buttonEntrar}> Entrar </button>
-                    <button className={styles.buttonCriar}>Criar conta</button>
+                    <button className={styles.buttonCriar}> Criar conta</button>
                 </div>
                 
             </form>

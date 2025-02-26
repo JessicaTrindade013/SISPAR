@@ -7,6 +7,7 @@ import Analises from "../../assets/Dashboard/N-Análises.png";
 import Aprovados from "../../assets/Dashboard/N-Aprovados.png";
 import Rejeitados from "../../assets/Dashboard/N-Rejeitados.png";
 import Solicitados from "../../assets/Dashboard/N-Solicitados.png";
+import Sistema from "../../assets/Dashboard/Sistema-atualizado.png";
 import styles from "./Reembolsos.module.scss";
 import NavBar from "../navbar/NavBar.jsx";
 
@@ -36,47 +37,51 @@ function Reembolsos() {
 
         <section className={styles.containerCards}>
           <article>
-            <img src={Solicitar} alt="" />
-            <h3>Solicitar Reembolso</h3>
+            <img src={Solicitar} alt="Solicitar reembolso" />
+            <h2>Solicitar Reembolso</h2>
           </article>
 
           <article>
-            <img src={Analise} alt="" />
-            <h3>Verificar análises</h3>
+            <img src={Analise} alt="Verificar Análises" />
+            <h2>Verificar análises</h2>
           </article>
 
           <article>
-            <img src={Historico} alt="" />
-            <h3>Histórico</h3>
+            <img src={Historico} alt="Histórico" />
+            <h2>Histórico</h2>
           </article>
         </section>
 
         <section className={styles.containerStatus}>
           <div className={styles.divImagens}>
-            <img className={styles.imgSolicitados} src={Solicitados} alt="" />
-            <h4>182</h4>
+            <img className={styles.imgSolicitados} src={Solicitados} alt="Quantidade solicitada" />
+            <h3>182</h3>
             <p>Solicitados</p>
           </div>
 
           <div className={styles.divImagens}>
-            <img className={styles.imgAnalises} src={Analises} alt="" />
-            <h4>74</h4>
+            <img className={styles.imgAnalises} src={Analises} alt="Quantidade de análises" />
+            <h3>74</h3>
             <p>Em análise</p>
           </div>
 
           <div className={styles.divImagens}>
-            <img className={styles.imgAprovados} src={Aprovados} alt="" />
-            <h4>195</h4>
+            <img className={styles.imgAprovados} src={Aprovados} alt="Quantidade de aprovados" />
+            <h3>195</h3>
             <p>Aprovados</p>
           </div>
 
           <div className={styles.divImagens}>
-            <img className={styles.imgRejeitados} src={Rejeitados} alt="" />
-            <h4>41</h4>
+            <img className={styles.imgRejeitados} src={Rejeitados} alt="Quantidade de rejeitados" />
+            <h3>41</h3>
             <p>Rejeitados</p>
           </div>
 
         </section>
+        <div className={styles.divSistema}>
+          <img src={Sistema} alt="Confirmação de sistema atualizado"/>
+          <h2>Sistema atualizado.</h2>
+        </div>
       </main>
       </div>
     </div>

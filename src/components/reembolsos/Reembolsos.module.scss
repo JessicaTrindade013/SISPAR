@@ -7,7 +7,7 @@
 
 
 header {
-  width: 8vw;
+  width: 9vw;
   height: 5vh;
   display: flex; 
   justify-content: space-evenly;
@@ -96,7 +96,7 @@ article {
       font-family: Inter;
       color: #23282f;
       }
-    h4{
+      h3{
       font-weight: 700;      
       font-family: Inter;
       color: #23282f;
@@ -136,4 +136,21 @@ article {
   padding: 5px;
   width: 1.25vw;
   height: 2.63vh;
+}
+.divSistema{
+  padding-top: 2rem; 
+  padding-right: 45rem;  
+  display: flex;  
+  gap:8px;
+  
+  h2{
+    font-family: Inter;  
+    font-size: 16px;
+    height: 5vh;
+    font-weight: 400;
+    color: #0844c4;     
+  }
+  img{    
+  height: 1.8vh;
+  }
 }
